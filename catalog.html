@@ -1,0 +1,39 @@
+---
+layout: default
+title: Product Catalog
+---
+
+<div class="row">
+    <div class="col-12 mb-3">
+        <input type="text" id="search" class="form-control" placeholder="Search products...">
+    </div>
+</div>
+
+<div class="row" id="product-grid">
+    {% for product in site.data.products %}
+    <div class="col-md-4 mb-4 product" data-type="{{ product.type }}" data-price="{{ product.price }}">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ product.name }}</h5>
+                <p class="card-text">Type: {{ product.type }}</p>
+                <p class="card-text">Tags: {{ product.tags | join: ', ' }}</p>
+                <p class="card-text">Price: {{ product.price }}</p>
+                <a href="{{ product.url }}" class="btn btn-primary" target="_blank">Buy Now</a>
+                <p class="mt-2 text-muted">{{ product.comments }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+    const searchInput = document.getElementById('search');
+    searchInput.addEventListener('input', () => {
+        const query = searchInput.value.toLowerCase();
+        const products = document.querySelectorAll('.product');
+        products.forEach(product => {
+            const text = product.textContent.toLowerCase();
+            product.style.display = text.includes(query) ? 'block' : 'none';
+        });
+    });
+</script>

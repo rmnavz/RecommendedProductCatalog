@@ -1,0 +1,7 @@
+.product .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.product .card-body {
+    text-align: center;
+}
