@@ -1,0 +1,34 @@
+[
+  {
+    "Name":"Product 1",
+    "Type":"Electronics",
+    "Tags":"Smartphone;Gadget",
+    "Price":"500-600",
+    "URL":"https:\/\/example.com\/product1",
+    "Comments":"Best price during sales"
+  },
+  {
+    "Name":"Product 2",
+    "Type":"Home",
+    "Tags":"Kettle;Appliance",
+    "Price":"50-70",
+    "URL":"https:\/\/example.com\/product2",
+    "Comments":"Recommended for durability"
+  },
+  {
+    "Name":"Product 3",
+    "Type":"Fashion",
+    "Tags":"Clothing;Casual",
+    "Price":"20-40",
+    "URL":"https:\/\/example.com\/product3",
+    "Comments":"Trendy and affordable"
+  },
+  {
+    "Name":"Product 4",
+    "Type":"Fashion",
+    "Tags":"Clothing;Casual",
+    "Price":"20-40",
+    "URL":"https:\/\/example.com\/product4",
+    "Comments":"Trendy and affordable"
+  }
+]
