@@ -28,6 +28,7 @@ jobs:
           gem install bundler --user-install
           echo "$HOME/.local/share/gem/ruby/3.0.0/bin" >> $GITHUB_PATH  # Add gem executables to PATH
           export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"  # Ensure the PATH is updated for the current session
+          cd path/to/your/jekyll/project  # Change to the correct directory
           bundle install
         shell: /usr/bin/bash -e {0}
         env:
