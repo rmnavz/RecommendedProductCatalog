@@ -25,11 +25,7 @@ jobs:
 
     - name: Convert CSV to JSON
       run: |
-        python -c "
-import pandas as pd;
-df = pd.read_csv('data/products.csv');
-df.to_json('data/products.json', orient='records', indent=2);
-        "
+        python -c "import pandas as pd; df = pd.read_csv('data/products.csv'); df.to_json('data/products.json', orient='records', indent=2);"
 
     - name: Commit and Push Changes
       run: |
