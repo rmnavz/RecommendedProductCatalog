@@ -25,7 +25,7 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Jekyll and Dependencies
         run: |
-          gem install bundler
+          gem install bundler --user-install
           bundle install
       - name: Build Jekyll Site
         run: bundle exec jekyll build
